@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            margin:0;
+            padding:0;
+        }
+        #main{
+            justify-content: center;
+            border:1px solid black;
+            width: 50%;
+            height: 50%;
+        }
+        h3{
+            border:1px solid black;
+            text-align: center;           
+        }
+        #a1{
+            border : 1px solid black;
+        }
+        #a2{
+            border:1px solid black;
+        }
+        a{
+            text-decoration: none;
+        }
+        input{
+            border-radius: 5px;
+            border:1px solid gray;
+            padding:10px 50px; 
+        }
+        #a1 > p, #a2>p{
+            font-weight: bolder;
+        }
+        #main > #geast{
+            display: flex;
+        }
+        #loginBT{
+            border:1px solid black;
+            padding: 20px 100px 20px 100px;
+            margin-top: 100px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <h3>로그인</h3>
+        <div id="a1">
+            <p>아이디</p>
+            <input type="text" placeholder="아이디 입력">
+        </div>
+        <div id="a2">
+            <p>비밀번호</p>
+            <input type="password" placeholder="비밀번호 입력">
+        </div>
+        <a id="loginBT" href="#">로그인</a>
+        <p>아직 회원이 아니신가요?</p>
+        <a id="geast"href="#">회원가입</a>
+    </div>
+</body>
+
+</html>

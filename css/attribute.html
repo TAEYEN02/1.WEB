@@ -34,6 +34,12 @@
         /* src 속성에 .jpg로 끝나는 img태그를 선택 ($=) */
         img[src $=".jpg"] {
             border: 1px solid black;
+
+        }
+
+        /* title 속성에 example이 포함된 요소를 선택 */
+        [title*="example"] {
+            font-style: italic;
         }
     </style>
 </head>

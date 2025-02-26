@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu {
+            display: inline-block;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            border: 1px solid black;
+            width: 80px;
+            height: 20px;
+        }
+
+        .main_menu {
+            list-style: none;
+            display: flex;
+            cursor: pointer;
+            border: none;
+        }
+
+        .sub_menu {
+            display: none;
+            position: absolute;
+            list-style: none;
+            padding-top:24px;
+            flex-direction: reverse;
+            z-index: 1;
+        }
+
+        .sub_menu li {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .main_menu li:hover {
+            background: red;
+        }
+
+        .main_menu li:hover .sub_menu {
+            display: block;
+        }
+
+        .sub_menu li:hover {
+            background-color: #f1f1f1
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <ul class="main_menu">
+            <li>HTML
+            <ul class="sub_menu">
+                <li>메뉴1</li>
+                <li>메뉴2</li>
+                <li>메뉴3</li>
+            </ul>
+        </li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>JQuery</li>
+            <li>Jsp</li>
+        </ul>
+
+    </div>
+
+</body>
+<script>
+    
+</script>
+
+</html>
