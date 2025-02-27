@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            background: #f2f2f2;
+            height: 100vh;
+        }
+
+        .signup-container {
+            background-color: #fff;
+            width: 400px;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .signup-container h2 {
+            text-align: center;
+        }
+
+        .signup-container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .signup-container label {
+            font-weight: bolder;
+            padding-bottom: 10px;
+        }
+
+        .signup-container input {
+            margin-bottom: 30px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+
+        .signup-container button {
+            background: #3f29ef;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .signup-container button:hover {
+            background: #2e1cb3;
+            cursor: pointer;
+        }
+
+        .signup-container .login {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .signup-container .login a {
+            text-decoration: none;
+            color: #2e1cb3;
+        }
+
+        .signup-container #ID input {
+            padding-right: 140px;
+        }
+        .signup-container #email_currect{
+            flex: 1;
+        }
+        .signup-container #email_currect input{
+            padding-right: 8px;
+        }
+        .signup-container #email_currect #email_opption{
+           padding: 10px;
+           flex:1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="signup-container">
+        <h2>회원가입</h2>
+        <form action="#" method="POST">
+            <label for="username">이름</label>
+            <input type="text" id="username" placeholder="이름 입력">
+
+            <label for="userid">아이디</label>
+            <div id="ID">
+                <input type="text" id="userid" placeholder="아이디 입력">
+                <button id="check">중복체크</button>
+            </div>
+
+            <label for="password">비밀번호</label>
+            <input type="password" id="password" placeholder="비밀번호 입력">
+
+            <label for="password_currect">비밀번호 확인</label>
+            <input type="password" id="password_currect" placeholder="비밀번호 확인">
+            
+            <label for="email">이메일</label>
+            <div id="email_currect">
+                <input type="text" id="email" placeholder="이메일">
+                <span>@</span>
+                <select id="email_opption">
+                    <option>naver.com</option>
+                    <option>gamil.com</option>
+                    <option>daum.com</option>
+                    <option>직접입력</option>
+                </select>
+            </div>
+
+            <button id="login">회원가입</button>
+        </form>
+
+        <div class="login">
+            이미 계정이 있으신가요? <a href="login(1).html">로그인</a>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    document.getElementById("login").addEventListener("click", function(event){
+        event.preventDefault(); 
+
+        var username = document.getElementById("username").value;
+        var userid = document.getElementById("userid").value;
+        var password = document.getElementById("password").value;
+        var passwordConfirm = document.getElementById("password_currect").value;
+        var email = document.getElementById("email").value;
+        
+        if (!username || !userid || !password || !passwordConfirm || !email) {
+            alert("모두 다 입력해주세요");
+            return;
+        }
+        alert("회원가입이 완료되었습니다");
+        window.location.href = "login(1).html"; 
+    });
+</script>
