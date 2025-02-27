@@ -8,7 +8,10 @@ i{
     font-size: 25px;
     margin-top: 20px;
 }
-
+i:hover{
+    color:gray;
+    cursor: pointer;
+}
 /* 썸네일을 포함하고 있는 div */
 .thumbnail_grid {
     display: grid;
@@ -153,3 +156,4 @@ button {
 .selected{
     border-bottom: 3px solid gray;
 }
+
