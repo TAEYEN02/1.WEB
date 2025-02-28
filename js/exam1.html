@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.write('<p><strong>문제</strong></p>');
+        // 농구공이 23개가 있다
+        // 하나의 박스에 4개 씩 들어갈 수 있다
+        // 총 필요한 박스의 개수를 구하시오
+        let ball = 23;
+        let box = 4;
+        const count = ball / box;
+        const count1 = Math.ceil(count);
+
+        ball % 4 == 0 ? document.write("박스의 개수 : " + count+ "<br>") : document.write("박스의개수 : " + count1 + "<br>");
+
+        document.write('<hr>');
+        // 사각형의 면적과 둘레 계산하기
+        /*
+            가로:10
+            세로:4
+        */
+        let w1 = 10;
+        let h1 = 4;
+        const area = w1 * h1;
+        const round = ((w1 + h1) * 2);
+
+        document.write("면적 : " + area + "<br>");
+        document.write("둘레 : " + round + "<br>");
+        document.write('<hr>');
+        // 숫자들의 평균 구하기
+        /**
+         * 숫자1:80
+         * 숫자2:95
+         * 숫자3:75*/
+        let n1 = 80;
+        let n2 = 95;
+        let n3 = 75;
+
+        const add = n1 + n2 + n3;
+        const avg = add / 3;
+
+
+        document.write("평균 : " + Math.ceil(avg) + "<br>");
+        document.write('<hr>');
+        // 하루의 총 시간을 초로 계산하기
+        let time = 24;
+        const sec = time * 60 * 60;
+        document.write("하루의 총 시간을 초로 계산: " + sec + "초" + "<br>");
+        document.write('<hr>');
+        // 섭씨 온도를 화씨 온도로 변환하기
+        // 화씨 = 섭씨 * 1.8 + 32;
+        // 25도를 화씨로 변환하여 출력하세요
+        let Celsius = 25;
+        let Fahrenheit = Celsius * 1.8 + 32;
+        document.write("화씨 :  " + Fahrenheit);
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
