@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js"></script>
 </head>
 
 <body><!-- HTML문서에서 실질적으로 보이는 영역을 정의하는 구간 이미지, 글, 링크, 테이블, 동영상 등등 -->
@@ -32,19 +33,22 @@
             <img src="/1.WEB/img/cat.jpg" class="circle_pic">
         </div>
         <div id="profile_info">
-            <div id="id">half_bottle <i class="fa-solid fa-gear"></i></div>
+            <div id="id">
+                <span>half_bottle</span>
+                <i class="fa-solid fa-gear"></i>
+            </div>
             <button id="profile_btn">프로필 편집</button>
         </div>
     </div>
     <div>
         <p>
-            <strong>
+            <strong id="userInfo">
                 반병현(Bynghyun Ban)<br>
             </strong>
-            작가<br>
+            <span id="summary">작가</span><br>
         </p>
-        <p>
-            <a href="#">needleworm.github.io</a>
+        <p id="profileDetail">
+            <a href="https://needleworm.github.io">needleworm.github.io</a>
         </p>
     </div>
     <div id="highlight_area">
@@ -121,9 +125,3 @@
 </body>
 
 </html>
-<script>
-    document.getElementById("profile_btn").addEventListener('click',function(event){
-        event.preventDefault();
-        window.location.href="input.html";
-    })
-</script>

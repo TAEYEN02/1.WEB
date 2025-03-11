@@ -35,10 +35,16 @@
             f.method = "GET";
 
             //목적지
+            // 보통 백엔드 주소로 전달
             f.action = "login.jsp";
 
             //입력된 데이터를 전송
+            // 실제로 데이터를 전송해주는 함수
             f.submit();
+        }
+        function getinput(){
+            var id = $(`#m_id`).val();
+            console.log(id);
         }
     </script>
 </head>
@@ -65,7 +71,8 @@
             </tr>
         </table>
     </form>
-    <form></form> <!-- forms[1]-->
+    <form> 
+    </form> <!-- forms[1]-->
     <form></form> <!-- forms[2]-->
 </body>
 </html>

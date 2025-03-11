@@ -61,6 +61,9 @@ i:hover{
     border-radius: 50%;
     border: 1px solid white;
 }
+.circle_pic:hover{
+    cursor: pointer;
+}
 
 /* 하이라이트 영역 grid 사용하여 정렬 */
 #highlight_area {
