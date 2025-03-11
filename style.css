@@ -60,6 +60,7 @@ i:hover{
     object-fit: cover;
     border-radius: 50%;
     border: 1px solid white;
+    padding-top: 10px;
 }
 .circle_pic:hover{
     cursor: pointer;
