@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="personal_info.css">
+</head>
+<body>
+    <div>
+        <h2>개인정보입력 폼</h2>
+    <table>
+
+        <tr id="personNum">
+            <td id="personNum">주민번호</td>
+            <td><input type="text" id="personId">-<input type="text"id="personIdback"><button  id="submit">검증</button></td>
+        </tr>
+        <tr id="brith">
+            <td >생일</td>
+            <td><input type="text" id="years">년<input type="text" id="month">월<input type="text" id="day">일</td>
+        </tr>
+        <tr id="sex">
+            <td >성별</td>
+            <td><input type="radio" value="M"id="M">남자<input type="radio" value="W" id="W">여자</td>
+        </tr>
+        <tr id="like">
+            <td >관심분야</td>
+            <td>
+                <input type="checkbox" value="trip"id="trip">여행
+                <input type="checkbox" value="movie"id="movie">영화
+                <input type="checkbox" value="book"id="book">독서
+                <input type="checkbox" value="musie"id="musie">음악
+                <input type="checkbox" value="none"id="none">관심없음
+            </td>
+        </tr>
+        <tr>
+            <td>자기소개</td>
+            <td><textarea id="intr"></textarea></td>
+        </tr>
+    </table>
+    <button id="ok">수정완료</button>
+    </div>
+    
+</body>
+</html>
